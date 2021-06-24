@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/forme.css" />
+    </stylesheets>
+    <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="Država:" />
+      <ChoiceBox fx:id="choiceDrzava" prefWidth="150.0" GridPane.columnIndex="1" />
+       <Label text="Sa gradovima" GridPane.rowIndex="1" />
+       <CheckBox fx:id="checkSaGradovima" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ButtonBar prefHeight="40.0"  GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <buttons>
+          <Button mnemonicParsing="false" text="Obriši državu" onAction="#actionObrisi"/>
+            <Button fx:id="btnCancel" mnemonicParsing="false" text="Odustani" onAction="#actionClose"/>
+        </buttons>
+      </ButtonBar>
+   </children>
+    <opaqueInsets>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</GridPane>
